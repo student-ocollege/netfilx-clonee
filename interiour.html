@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+NO:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        .nav-link {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #000;
+  left: 0;
+  bottom: 0;
+  transition: 0.3s ease;
+}
+
+.nav-link:hover::after,                     
+.nav-link:focus::after {
+  width: 100%;
+}
+
+body {
+  font-family: "Alan Sans", sans-serif;
+}
+
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: move 2s ease-in-out forwards;
+}
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+    
+
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height: 95px;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="interiour.png" alt="logo" width="140" height="96" />
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto" style="gap: 35px;">   <!-- GAP ADDED HERE -->
+        
+        <li class="nav-item">
+          <a class="nav-link" style="font-size: 17px; font-weight: 700;" href="#">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" style="font-size: 17px; font-weight: 700;" href="#">Service</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" style="font-size: 17px; font-weight: 700;" href="#">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " style="font-size: 17px; font-weight: 700;" href="#">Portfolio</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" style="font-size: 17px; font-weight: 700;" href="#">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<section class="hero" style="height: 550px;">
+    <video autoplay muted class="hero-video">
+        <source src="interiour.mp4" type="video/mp4">
+    </video>
+
+    
+
+
+
+
+
+    <!-- HERO TEXT -->
+    <div style="
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        z-index: 2;
+    ">
+        <h1 style="font-size: 55px; font-weight: 700;">
+            Designing Spaces That Inspire Living
+        </h1>
+
+        <p style="font-size: 20px; margin-top: 10px;">
+            Beautiful interiors crafted with creativity, comfort, and elegance.
+        </p>
+
+        <button style="
+            margin-top: 20px; 
+            background: #B68957; 
+            border: none; 
+            padding: 12px 30px; 
+            color: white; 
+            font-size: 18px; 
+            border-radius: 5px;
+        ">
+            Explore Our Work
+        </button>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- OUR SERVICES SECTION -->
+<section class="container-fluid" style="background: #e0ccb7; padding: 40px 0;">
+
+  <h1 class="text-center mb-4">Our Services</h1>
+
+  <div style="display: flex; gap: 25px; justify-content: center; margin-top: 20px;">
+    
+    <!-- CARD 1 -->
+    <div class="card text-center p-3" style="width: 18rem; padding: 40px 0;">
+      <div class="card-body">
+        <i class="fa-solid fa-brush" style="font-size: 40px; color: #B68957;"></i>
+        <h5 class="card-title mt-3">Interior & Design</h5>
+        <p class="card-text">Creating stylish and functional interior spaces.</p>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card text-center p-3" style="width: 18rem;">
+      <div class="card-body">
+        <i class="fa-solid fa-ruler-combined" style="font-size: 40px; color: #B68957;"></i>
+        <h5 class="card-title mt-3">Space Planning</h5>
+        <p class="card-text">Smart layouts that improve flow and comfort.</p>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card text-center p-3" style="width: 18rem;">
+      <div class="card-body">
+        <i class="fa-solid fa-screwdriver-wrench" style="font-size: 40px; color: #B68957;"></i>
+        <h5 class="card-title mt-3">Project Management</h5>
+        <p class="card-text">Managing all aspects of your design project.</p>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="card text-center p-3" style="width: 18rem;">
+      <div class="card-body">
+        <i class="fa-solid fa-cubes" style="font-size: 40px; color: #B68957;"></i>
+        <h5 class="card-title mt-3">3D Visualization</h5>
+        <p class="card-text">Stunning 3D visuals to view your space before execution.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ABOUT US SECTION -->
+<section class="container py-5" id="about">
+  <div class="row align-items-center g-4">
+
+    <!-- IMAGE -->
+    <div class="col-lg-6">
+      <img 
+        src="https://chiedesign.in/wp-content/uploads/2022/05/Luxury-Interior-Design-Living-Room.jpg" 
+        class="img-fluid rounded-4 shadow"
+        alt="Interior Design"
+        style="width: 100%; height: auto; object-fit: cover;"
+      >
+    </div>
+
+    <!-- TEXT CONTENT -->
+    <div class="col-lg-6">
+      <h2 class="fw-bold mb-3" style="color:#B68957; text-align: center;">About Us</h2>
+
+      <h3 class="fw-semibold mb-3">
+        Crafting Beautiful & Functional Spaces
+      </h3>
+
+      <p style="font-size: 16px; line-height: 1.7;">
+        We are a passionate interior design studio dedicated to creating beautiful, 
+        functional, and timeless spaces. Our design philosophy blends creativity, 
+        luxury, and comfort to transform ordinary rooms into inspiring environments.
+      </p>
+
+      <p style="font-size: 16px; line-height: 1.7;">
+        From residential homes to commercial interiors, we bring expertise, 
+        elegance, and style to every project—ensuring your space truly reflects your 
+        personality and lifestyle.
+      </p>
+
+      <!-- FEATURES -->
+      <div class="row mt-4">
+        <div class="col-6 mb-3">
+          <i class="fa-solid fa-check" style="color:#B68957; margin-right:8px;"></i>
+          Modern Design
+        </div>
+
+        <div class="col-6 mb-3">
+          <i class="fa-solid fa-check" style="color:#B68957; margin-right:8px;"></i>
+          Space Planning
+        </div>
+
+        <div class="col-6 mb-3">
+          <i class="fa-solid fa-check" style="color:#B68957; margin-right:8px;"></i>
+          3D Visualization
+        </div>
+
+        <div class="col-6 mb-3">
+          <i class="fa-solid fa-check" style="color:#B68957; margin-right:8px;"></i>
+          Project Management
+        </div>
+      </div>
+
+      <!-- BUTTON -->
+      <button class="btn mt-3" 
+        style="background:#B68957; color:white; border-radius:5px; text-align: center; margin-left: 250px;">
+        Learn More
+      </button>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- PORTFOLIO SECTION -->
+<section class="py-5" id="portfolio">
+  <div class="container">
+
+    <h2 class="text-center fw-bold mb-4" style="color:#B68957;">
+      Our Portfolio
+    </h2>
+
+    <p class="text-center mb-5" style="max-width:700px; margin:auto; font-size:16px;">
+      A showcase of our finest interior design projects—crafted with perfection, 
+      creativity, and elegance.
+    </p>
+
+    <!-- Responsive Grid -->
+    <div class="row g-4">
+
+      <!-- ITEM 1 -->
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="portfolio-item position-relative overflow-hidden rounded-4">
+          <img src="https://www.home-designing.com/wp-content/uploads/2018/01/large-interior-window-red-rug-artistic-living-rooms.jpg" class="img-fluid" alt="Portfolio Image" style="width:100%; height:300px; object-fit:cover;">
+          <div class="portfolio-overlay">
+            <!--<h5>Modern Living Room</h5-->
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 2 -->
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="portfolio-item position-relative overflow-hidden rounded-4">
+          <img src="https://www.nobroker.in/blog/wp-content/uploads/2023/04/luxury-bedroom-interior-design.webp" class="img-fluid" alt="Portfolio Image" style="width:100%; height:300px; object-fit:cover;">
+          <div class="portfolio-overlay">
+            <!--<h5>Luxury Bedroom</h5-->
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 3 -->
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="portfolio-item position-relative overflow-hidden rounded-4">
+          <img src="https://i.pinimg.com/originals/b7/0f/aa/b70faa9a6d7f6168ca2c13abe70975c8.jpg" class="img-fluid" alt="Portfolio Image" style="width:100%; height:300px; object-fit:cover;">
+          <div class="portfolio-overlay">
+            <!--<h5>Elegant Kitchen</h5-->
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 4 -->
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="portfolio-item position-relative overflow-hidden rounded-4">
+          <img src="https://foyr.com/learn/wp-content/uploads/2019/03/office-interior-design-space.jpg" class="img-fluid" alt="Portfolio Image" style="width:100%; height:300px; object-fit:cover;">
+          <div class="portfolio-overlay">
+            <!--<h5>Office Workspace</h5-->
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 5 -->
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="portfolio-item position-relative overflow-hidden rounded-4">
+          <img src="https://images.squarespace-cdn.com/content/v1/57ad8de5ff7c50d12ce76b68/1595429263897-4FY7ZDPHZWGG7DDQQLM1/ke17ZwdGBToddI8pDm48kOggE0Ch6pMGalwtLMqzsSB7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1Ufo5RWkg_J4of0jUNHaDHx6pZKBvpVYzidBWCapg0tuoMuEaB2HPGSYDV-11UTcW2g/Engage-285.jpg" class="img-fluid" alt="Portfolio Image" style="width:100%; height:300px; object-fit:cover;">
+          <div class="portfolio-overlay">
+            <!--<h5>Creative Studio</h5-->
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 6 -->
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="portfolio-item position-relative overflow-hidden rounded-4">
+          <img src="https://ansainteriors.com/wp-content/uploads/2019/01/luxury-dining-room-interiors-ansa-scaled-1.jpg" style="width:100%; height:300px; object-fit:cover;">
+          <div class="portfolio-overlay">
+            <!--<h5>Classic Dining Area</h5 -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO CSS -->
+<style>
+  //*.portfolio-item {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:20px;
+    font-weight:600;
+    transition:0.3s ease;
+  }
+
+  .portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+  }
+</style>
+
+
+
+<!-- WHY CHOOSE US SECTION -->
+<section class="py-5" style="background:#f8f4ef;">
+  <div class="container">
+
+    <h2 class="text-center fw-bold mb-4" style="color:#B68957;">
+      Why Choose Us
+    </h2>
+
+    <p class="text-center mb-5" style="max-width:700px; margin:auto; font-size:16px;">
+      We blend creativity, functionality, and luxury to design spaces that reflect 
+      your personality. Here's why our clients trust us for their dream interiors.
+    </p>
+
+    <div class="row g-4">
+
+      <!-- BOX 1 -->
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="text-center p-4 rounded-4 shadow-sm" style="background:white;">
+          <i class="fa-solid fa-lightbulb" style="font-size:45px; color:#B68957;"></i>
+          <h5 class="">Creative Concepts</h5>
+          <p style="font-size:14px;">Unique ideas that transform your vision into beautiful spaces.</p>
+        </div>
+      </div>
+
+      <!-- BOX 2 -->
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="text-center p-4 rounded-4 shadow-sm" style="background:white;">
+          <i class="fa-solid fa-compass-drafting" style="font-size:45px; color:#B68957;"></i>
+          <h5 class="">Expert Designers</h5>
+          <p style="font-size:14px;">Experienced team crafting detailed and elegant interiors.</p>
+        </div>
+      </div>
+
+      <!-- BOX 3 -->
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="text-center p-4 rounded-4 shadow-sm" style="background:white;">
+          <i class="fa-solid fa-clock" style="font-size:45px; color:#B68957;"></i>
+          <h5 class="">On-Time Delivery</h5>
+          <p style="font-size:14px;">We deliver every project within the committed timeline.</p>
+        </div>
+      </div>
+
+      <!-- BOX 4 -->
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="text-center p-4 rounded-4 shadow-sm" style="background:white;">
+          <i class="fa-solid fa-gem" style="font-size:45px; color:#B68957;"></i>
+          <h5 class="">Premium Quality</h5>
+          <p style="font-size:14px;">We use top-quality materials and modern design elements.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- CONTACT US SECTION -->
+<section class="container my-5" id="contact">
+  <div class="text-center mb-4">
+    <h2 class="fw-bold">Contact Us</h2>
+    <p style="max-width: 600px; margin: auto;">
+      Have a project in mind? We'd love to hear from you!
+    </p>
+  </div>
+
+  <div class="row g-4">
+    
+    <!-- Contact Info -->
+    <div class="col-md-5">
+      <div class="p-4 shadow-sm rounded" style="background:#f8f4ef;">
+        <h5 class="fw-bold mb-3">Get in Touch</h5>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Email:</strong> info@interiordesign.com</p>
+        <p><strong>Location:</strong> West Delhi, India</p>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="col-md-7">
+      <form class="p-4 shadow-sm rounded" style="background:#f8f4ef;">
+        <div class="mb-3">
+          <label class="form-label">Your Name</label>
+          <input type="text" class="form-control" placeholder="Enter your name">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-control" placeholder="Enter your email">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Message</label>
+          <textarea class="form-control" rows="4" placeholder="Write your message"></textarea>
+        </div>
+
+        <button style="background: #B68957;" class="btn btn-dark w-100">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<footer class=" text-light pt-5 pb-4" style="background: #B68957;">
+  <div class="container">
+    <div class="row">
+
+      <!-- Logo + About -->
+      <div class="col-md-4 mb-4">
+        <h4 class="fw-bold">Interior Studio</h4>
+        <p>
+          We create modern, elegant and functional interior spaces 
+          designed to reflect your personality and lifestyle.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-2 mb-4">
+        <h5 class="fw-semibold">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Services</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Projects</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-semibold">Our Services</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none">3D Visualization</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Space Planning</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Modular Kitchen</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Interior Execution</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-semibold">Contact Us</h5>
+        <p class="mb-1"><i class="bi bi-geo-alt"></i> New Delhi, India</p>
+        <p class="mb-1"><i class="bi bi-envelope"></i> interiorstudio@gmail.com</p>
+        <p><i class="bi bi-telephone"></i> +91 98765 43210</p>
+
+        <!-- Social icons -->
+        <div class="d-flex gap-3">
+          <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-light fs-5"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-light fs-5"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="border-light" />
+
+    <div class="text-center">
+      <p class="mb-0">© 2025 Interior Studio. All Rights Reserved.</p>
+    </div>
+
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
